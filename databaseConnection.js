@@ -11,11 +11,12 @@ const dbConfigHeroku = {
 };
 
 const dbConfigLocal = {
-	host: "localhost",
-	user: "root",
-	password: "Password",
-	database: "lab_example",
-	multipleStatements: false
+	host: "eanl4i1omny740jw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+	user: "qh6w3j60pihz93no",
+	password: "xvhll4qonee7b2ba",
+	database: "uezpa201ev9kfuuq",
+	multipleStatements: false,
+	reconnect: true,
 };
 
 if (is_heroku) {
