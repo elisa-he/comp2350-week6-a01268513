@@ -10,7 +10,7 @@ const dbConfigHeroku = {
 	multipleStatements: false,
 	reconnect: true,
 };
-};
+
 
 const dbConfigLocal = {
 	host: "eanl4i1omny740jw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
