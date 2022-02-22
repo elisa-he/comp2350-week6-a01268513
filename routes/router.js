@@ -2,7 +2,10 @@ const router = require("express").Router();
 const database = include("databaseConnection");
 const dbModel = include("databaseAccessLayer");
 //const dbModel = include('staticData');
-
+router.post("/addUser", (req, res) => {
+  console.log("form submit");
+  console.log(req.body);
+});
 router.get("/", (req, res) => {
   console.log("page hit");
   database.getConnection(function (err, dbConnection) {
@@ -27,11 +30,6 @@ router.get("/", (req, res) => {
       dbConnection.release();
     }
   });
-});
-
-router.post("/addUser", (req, res) => {
-  console.log("form submit");
-  console.log(req.body);
 });
 
 module.exports = router;
